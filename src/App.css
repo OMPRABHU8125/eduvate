@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(180deg, #4c66db, #6a5acb);
+  color: white;
+}
+
+.app-container {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1e3a8a; /* Tailwind's blue-800 */
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 40px; /* Adjust to desired size */
+  width: 40px; /* Keep the logo square */
+  margin-right: 10px; /* Add spacing between the logo and text */
+}
+
+.links {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #93c5fd; /* Tailwind's blue-300 */
+}
+
+
+.navbar .links a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+  padding: 3rem 2rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section img.section-image {
+  max-width: 40%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 15px;
+}
+
+/* Study Plan */
+.study-plan input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.study-plan button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #6a5acb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.study-plan button:hover {
+  background-color: #ffcc00;
+  color: black;
+}
+
+/* Progress Section */
+.progress-graph {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.graph-bar {
+  width: 40px;
+  background-color: #ffcc00;
+  border-radius: 5px;
+}
+
+/* Quests Section */
+.quests ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quests li {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .section img.section-image {
+    max-width: 80%;
+  }
+}

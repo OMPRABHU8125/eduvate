@@ -1,0 +1,161 @@
+/* StudyPlan.css */
+.study-plan {
+  min-height: 80vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  padding: 40px 20px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  color: #2d3748;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.content input {
+  width: 90%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.content input:focus {
+  outline: none;
+  border-color: #4c51bf;
+  box-shadow: 0 0 0 3px rgba(76, 81, 191, 0.1);
+}
+
+.content button {
+  width: 100%;
+  padding: 15px 30px;
+  background: #4c51bf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.content button:hover {
+  background: #434190;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 81, 191, 0.2);
+}
+
+.content button:active {
+  transform: translateY(0);
+}
+
+.file-upload-section {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-btn {
+  background: #f0f0f0;
+  border: 2px dashed #ccc;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #e0e0e0;
+  border-color: #999;
+}
+
+.file-name {
+  color: #4a5568;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.error-message {
+  color: #e53e3e;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.pdf-info {
+  color: #4a5568;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  padding: 8px;
+  background: #f7fafc;
+  border-radius: 4px;
+}
+
+.subject-input {
+  margin-bottom: 10px;
+}
+
+.generate-btn {
+  width: 100%;
+}
+
+.plan-display {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: left;
+}
+
+.plan-display h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.plan-display p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.plan-display h4 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.topics-list {
+  list-style-type: disc; /* Use bullets */
+  padding-left: 20px; /* Add indentation */
+}
+
+.topics-list li {
+  margin-bottom: 8px; /* Add spacing between items */
+  font-size: 16px; /* Adjust font size */
+  color: #333; /* Darker text color */
+}
+
+.study-plan-text {
+  white-space: pre-wrap; /* Wrap long text */
+  overflow-wrap: break-word; /* Break long words */
+  max-width: 100%; /* Prevent overflowing horizontally */
+  overflow: auto; /* Add scroll if content exceeds container size */
+  padding: 10px;
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Optional: Light background for readability */
+  color: #4c51bf;
+}
